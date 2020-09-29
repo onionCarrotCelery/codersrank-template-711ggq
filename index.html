@@ -7,9 +7,44 @@
 
     <h1>My First Website</h1>
     <p>My first paragraph.</p>
+    <form id='form_container'action='' method='get'>
+      <div class="container" id="input_container"></div>
+      <div class="control_panel" id="control"></div>
+    </form>
+
+    <div id="dictionary_reference">
+      <dl class="description" id="dictionary_definition">
+        <dt class="language_term">
+          coup de rabot
+        </dt>
+        <dd class="language_definition">
+          stroke of the plane
+        </dd>
+      </dl>
+      <ul id="random_selection">
+        <li>random choice a</li>
+        <li>random choice b</li>
+      </ul>
+      <ol>
+        <li>option one</li>
+        <li>option two</li>
+      </ol>
+    </div>
 
   <script>
-
+    let input_container = document.getElementById('input_container');
+      let input = document.createElement('input');
+      input.setAttribute('name', 'hour');
+      input_container.appendChild(input);
+    let control_panel = document.getElementById('control');
+      let reset_button = document.createElement('button');
+      reset_button.setAttribute('type', 'reset');
+      reset_button.innerHTML = "reset";
+      control_panel.appendChild(reset_button);
+      let submit_button = document.createElement('button');
+      submit_button.setAttribute('type', 'submit');
+      submit_button.innerHTML = 'submit';
+      control_panel.appendChild(submit_button);
   </script>
   </body>
 </html>

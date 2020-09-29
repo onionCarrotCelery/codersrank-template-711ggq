@@ -1,3 +1,26 @@
 #form_container{
   background-color: goldenrod;
 }
+.container{
+  display: inline;
+  background-color: red;
+}
+.control_panel{
+  display: block;
+  background-color: lightblue;
+}
+dl{
+  background-color: lightgrey;
+  display: inline-block;
+}
+.language_term{
+  font-size: 10;
+}
+.language_definition{
+  font-size: 5;
+  font-style: italic;
+}
+#random_selection{
+  background-color: lightcoral;
+  display:inline-block;
+}
